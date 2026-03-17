@@ -5,6 +5,7 @@ import reactLogo from './assets/react.svg'
 import './App.css'
 import Hello from './Hello'
 import Bye from './Bye'
+import Myfunction from './Myfunction'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -20,6 +21,7 @@ function App() {
         <Hello/>
         <img src={reactLogo} alt="reactLogo" width="100" height="100" />
         <Bye/>
+        <Myfunction/>
 
         {/* <div>
           <h1>Get started</h1>
