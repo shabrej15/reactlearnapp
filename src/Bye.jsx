@@ -1,8 +1,10 @@
+import styles from './Bye.module.css';
+
 const Bye= ()=>{
     return (
 <div>
     <h1 className="heading">Bye Component</h1>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates quas quasi harum dignissimos nihil id ullam, repellat voluptas. Doloribus quas qui ea dignissimos eius exercitationem delectus rem magnam dolores nemo.</p>
+    <p className={styles.paragraph}>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates quas quasi harum dignissimos nihil id ullam, repellat voluptas. Doloribus quas qui ea dignissimos eius exercitationem delectus rem magnam dolores nemo.</p>
 </div>
     ) 
 }
