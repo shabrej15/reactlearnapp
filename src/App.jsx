@@ -6,6 +6,7 @@ import './App.css'
 import Hello from './Hello'
 import Bye from './Bye'
 import Myfunction from './Myfunction'
+import Myarrayobjects from './Myarrayobjects'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -22,6 +23,7 @@ function App() {
         <img src={reactLogo} alt="reactLogo" width="100" height="100" />
         <Myfunction/>
         <Bye/>
+        <Myarrayobjects />
         
 
         {/* <div>
