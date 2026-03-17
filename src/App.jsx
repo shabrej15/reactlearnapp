@@ -20,8 +20,9 @@ function App() {
         </div> */}
         <Hello/>
         <img src={reactLogo} alt="reactLogo" width="100" height="100" />
-        <Bye/>
         <Myfunction/>
+        <Bye/>
+        
 
         {/* <div>
           <h1>Get started</h1>
