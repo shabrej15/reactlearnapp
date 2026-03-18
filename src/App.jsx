@@ -7,6 +7,7 @@ import Hello from './Hello'
 import Bye from './Bye'
 import Myfunction from './Myfunction'
 import Myarrayobjects from './Myarrayobjects'
+import Conditional from './Conditional'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -24,6 +25,7 @@ function App() {
         <Myfunction/>
         <Bye/>
         <Myarrayobjects />
+        <Conditional />
         
 
         {/* <div>
