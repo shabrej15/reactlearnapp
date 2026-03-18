@@ -8,6 +8,13 @@ const Myarrayobjects = ()=>{
         age : "33"
     }
 
+    const userdetails = [
+        {firstname:"Shabrej",lastname:"Ahmad",age:"33"},
+        {firstname:"john",lastname:"doe",age:"30"},
+        {firstname:"marry",lastname:"kom",age:"32"},
+
+    ]
+
     const fullname = (users)=>{
         return users.firstname+ " "+ users.lastname
     }
@@ -35,6 +42,26 @@ fruits.map((fruit,index)=>(
 <p>Age : {user.age}</p>
 
           
+          <ul>
+            {
+                userdetails.map((userdetail,index)=>(
+              <li>
+               {index} - {userdetail.firstname} {userdetail.lastname} is {userdetail.age} year old
+              </li>      
+                ))
+            }
+          </ul>
+
+          <ul>
+            {
+                userdetails.map((userdetail) => (
+                    <li>
+                         {fullname(userdetail)} is {userdetail.age} year old
+                    </li>
+                   
+                ))
+            }
+          </ul>
         
             
         </div>
