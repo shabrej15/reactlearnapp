@@ -8,10 +8,22 @@ import Bye from './Bye'
 import Myfunction from './Myfunction'
 import Myarrayobjects from './Myarrayobjects'
 import Conditional from './Conditional'
+import Properties from './Properties'
 
 function App() {
   const [count, setCount] = useState(0)
 
+  const hobbies = ['playing', 'singing', 'travelling'];
+
+  const user = {name : "Shabrej Ahmad", age : 33}
+
+  const message = ()=>{
+    alert('message is displayed from box');
+  }
+
+  const byemessage = ()=>{
+    alert('bye message is displayed from box');
+  }
   return (
     <>
       <section id="center">
@@ -22,10 +34,12 @@ function App() {
         </div> */}
         <Hello/>
         <img src={reactLogo} alt="reactLogo" width="100" height="100" />
-        <Myfunction/>
+        {/* <Myfunction/>
         <Bye/>
         <Myarrayobjects />
-        <Conditional />
+        <Conditional /> */}
+        <Properties name="Shabrej Ahmad" age={33} hobbies= {hobbies} user= {user} label= "Click Me" handleClick = {message}/>
+        <Properties name="Sam Ahmad" label="Bye Click" handleClick = {byemessage}/>
         
 
         {/* <div>
