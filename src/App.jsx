@@ -34,10 +34,10 @@ function App() {
         </div> */}
         <Hello/>
         <img src={reactLogo} alt="reactLogo" width="100" height="100" />
-        {/* <Myfunction/>
+        <Myfunction/>
         <Bye/>
         <Myarrayobjects />
-        <Conditional /> */}
+        <Conditional />
         <Properties name="Shabrej Ahmad" age={33} hobbies= {hobbies} user= {user} label= "Click Me" handleClick = {message}/>
         <Properties name="Sam Ahmad" label="Bye Click" handleClick = {byemessage}/>
         
