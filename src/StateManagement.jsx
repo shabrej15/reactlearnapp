@@ -15,6 +15,11 @@ function StateManagement() {
     const changeCity=() =>{
         setStudent({...student, city:"Mumbai"})
     }
+
+    const handleInput = (e) =>{
+        setName(e.target.value)
+    }
+
   return (
     <div>
         <h1>StateManagement</h1>
@@ -38,7 +43,11 @@ function StateManagement() {
         <h2>Name is : {student.name}</h2><br />
         <h2>Grade is : {student.grade}</h2><br />
         <h2>City is : {student.city}</h2><br />
-        <button onClick={changeCity}>Change city</button>
+        <button onClick={changeCity}>Change city</button><br /><br />
+
+
+        <input type="text" value={name} onChange={handleInput} placeholder="Input Name" /><br />
+        <p>Name is : {name || "Guest"}</p>
 
 
     </div>
