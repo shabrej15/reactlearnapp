@@ -6,6 +6,15 @@ function StateManagement() {
     const [isLike, setIsLike] = useState(false)
     const [name, setName] = useState("Guest")
     const [age, setAge] = useState(18)
+    const [student, setStudent] = useState({
+        name : "Shabrej Ahmad",
+        grade : "A",
+        city : "Haridwar"
+    })
+
+    const changeCity=() =>{
+        setStudent({...student, city:"Mumbai"})
+    }
   return (
     <div>
         <h1>StateManagement</h1>
@@ -24,7 +33,12 @@ function StateManagement() {
     <h1>Name is : {name}</h1>
         <button onClick={()=>setName("Shabrej Ahmad")}>Change Name</button>
 <h1>Age is : {age}</h1>
-        <button onClick={()=>setAge(age+1)}>Change Age</button>
+        <button onClick={()=>setAge(age+1)}>Change Age</button><br /><br />
+
+        <h2>Name is : {student.name}</h2><br />
+        <h2>Grade is : {student.grade}</h2><br />
+        <h2>City is : {student.city}</h2><br />
+        <button onClick={changeCity}>Change city</button>
 
 
     </div>
