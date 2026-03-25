@@ -9,6 +9,7 @@ import Myfunction from './Myfunction'
 import Myarrayobjects from './Myarrayobjects'
 import Conditional from './Conditional'
 import Properties from './Properties'
+import StateManagement from './StateManagement'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -34,12 +35,15 @@ function App() {
         </div> */}
         <Hello/>
         <img src={reactLogo} alt="reactLogo" width="100" height="100" />
+        <StateManagement />
         <Myfunction/>
         <Bye/>
         <Myarrayobjects />
         <Conditional />
         <Properties name="Shabrej Ahmad" age={33} hobbies= {hobbies} user= {user} label= "Click Me" handleClick = {message}/>
         <Properties name="Sam Ahmad" label="Bye Click" handleClick = {byemessage}/>
+
+        
         
 
         {/* <div>
